@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Sobre mim";
+}
+<h1>@ViewData["Title"]</h1>
+<br />
+
+<div class="about-text">
+    
+   <h2 class="display-4">Um pouco sobre meus desafios</h2>
+    
+    <section>
+        <p>
+            Um dos desafios de programação mais impactantes em minha trajetória profissional ocorreu quando assumi a responsabilidade de realizar a migração de storage/banco de dados de uma das aplicações mais cruciais da empresa. Esta aplicação permite o gerenciamento dos acessos de todos os colaboradores da companhia, tornando o projeto de extrema importância.</p>
+        <p>
+            O principal objetivo do projeto era migrar de um armazenamento antigo, que continha uma variedade de arquivos utilizados como documentos pela empresa, para um novo storage. Cada parte do código que interagia com o armazenamento antigo precisou passar por uma refatoração. Isso foi necessário para organizar os arquivos de forma mais eficiente e inteligente.
+        </p>
+        <P>
+            Descobri uma abordagem extremamente valiosa para solucionar o desafio de implementação. O acesso aos diretórios necessitava de autenticação, o que tornava a tarefa mais complexa. A solução foi habilitar o servidor a acessar esses diretórios. Para isso, integrei à minha aplicação em .Net Framework a biblioteca 'mpr.dll', proporcionando acesso nativo aos diretórios SMB através do mapeamento de rede. Com isso, desenvolvi uma classe de serviço que facilita a conexão e desconexão desses diretórios.
+        </P>
+        <p>
+            A execução exigiu uma abordagem meticulosa, uma vez que foi necessário refatorar diversas partes do código, de diferentes projetos que se relacionavam, para garantir o acesso aos diretórios SMB. Além disso, foram realizados numerosos testes para assegurar o sucesso da transição. Trabalhei em estreita colaboração com um colega, com ambos desempenhando papéis complementares. Enquanto eu focava na API e no plugin, meu colega assumiu a responsabilidade pela parte web. Essa dinâmica exigiu uma grande sintonia entre nós, resultando em um projeto bem-sucedido e uma experiência valiosa em termos de trabalho em equipe e habilidades técnicas.
+        </p>
+    </section>
+</div>
+
+<style>
+    .about-text {
+        text-align: justify;
+    }
+</style>
+
+
+
+
+
+
